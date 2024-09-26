@@ -21,4 +21,4 @@ jobs:
         with:
           version: latest
 
-      - run: supabase functions --deploy --project-ref $SUPABASE_PROJECT_ID
+      - run: supabase functions deploy --project-ref $SUPABASE_PROJECT_ID
