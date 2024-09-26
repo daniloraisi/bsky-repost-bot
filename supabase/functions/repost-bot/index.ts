@@ -26,7 +26,7 @@ async function processMensions(mentions: Notification[]) {
 
     await repost(target.uri, target.cid);
 
-    await saveMention(target.cid);
+    await saveMention(mention.cid);
   }
 }
 
