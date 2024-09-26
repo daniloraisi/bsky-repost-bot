@@ -12,7 +12,7 @@ Esse é o repositório do Bot de Repost para o BlueSky da comunidade.dev.br.
 
 ## Para usar
 
-Mencione `@comunidade.dev.br` ou use as tags `#bolhatech` ou `#comunidadedev`.
+Mencione `@comunidade.dev.br` ou ~~use as tags `#bolhatech` ou `#comunidadedev`~~.
 
 ## Quer colaborar?
 
