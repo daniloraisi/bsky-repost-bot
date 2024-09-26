@@ -1,0 +1,14 @@
+services:
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+  serverless-redis-http:
+    ports:
+      - "8079:80"
+    image: hiett/serverless-redis-http:latest
+    env_file: .env
+    environment:
+      SRH_MODE: env
+      SRH_TOKEN: ${UPSTASH_REDIS_REST_TOKEN}
+      SRH_CONNECTION_STRIN: redis://redis:6379

@@ -1,0 +1,120 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "jsr:@std/assert@1": "jsr:@std/assert@1.0.6",
+      "jsr:@std/internal@^1.0.4": "jsr:@std/internal@1.0.4",
+      "jsr:@supabase/functions-js@^2.4.3": "jsr:@supabase/functions-js@2.4.3",
+      "npm:@atproto/api@^0.13.7": "npm:@atproto/api@0.13.7",
+      "npm:@upstash/redis@^1.34.0": "npm:@upstash/redis@1.34.0"
+    },
+    "jsr": {
+      "@std/assert@1.0.6": {
+        "integrity": "1904c05806a25d94fe791d6d883b685c9e2dcd60e4f9fc30f4fc5cf010c72207",
+        "dependencies": [
+          "jsr:@std/internal@^1.0.4"
+        ]
+      },
+      "@std/internal@1.0.4": {
+        "integrity": "62e8e4911527e5e4f307741a795c0b0a9e6958d0b3790716ae71ce085f755422"
+      },
+      "@supabase/functions-js@2.4.3": {
+        "integrity": "010834c9e7d2996b4be8e4004a15ed8f42b326490e4b354683f9c191353b76cc"
+      }
+    },
+    "npm": {
+      "@atproto/api@0.13.7": {
+        "integrity": "sha512-41kSLmFWDbuPOenb52WRq1lnBkSZrL+X29tWcvEt6SZXK4xBoKAalw1MjF+oabhzff12iMtNaNvmmt2fu1L+cw==",
+        "dependencies": {
+          "@atproto/common-web": "@atproto/common-web@0.3.0",
+          "@atproto/lexicon": "@atproto/lexicon@0.4.1",
+          "@atproto/syntax": "@atproto/syntax@0.3.0",
+          "@atproto/xrpc": "@atproto/xrpc@0.6.2",
+          "await-lock": "await-lock@2.2.2",
+          "multiformats": "multiformats@9.9.0",
+          "tlds": "tlds@1.254.0",
+          "zod": "zod@3.23.8"
+        }
+      },
+      "@atproto/common-web@0.3.0": {
+        "integrity": "sha512-67VnV6JJyX+ZWyjV7xFQMypAgDmjVaR9ZCuU/QW+mqlqI7fex2uL4Fv+7/jHadgzhuJHVd6OHOvNn0wR5WZYtA==",
+        "dependencies": {
+          "graphemer": "graphemer@1.4.0",
+          "multiformats": "multiformats@9.9.0",
+          "uint8arrays": "uint8arrays@3.0.0",
+          "zod": "zod@3.23.8"
+        }
+      },
+      "@atproto/lexicon@0.4.1": {
+        "integrity": "sha512-bzyr+/VHXLQWbumViX5L7h1NKQObfs8Z+XZJl43OUK8nYFUI4e/sW1IZKRNfw7Wvi5YVNK+J+yP3DWIBZhkCYA==",
+        "dependencies": {
+          "@atproto/common-web": "@atproto/common-web@0.3.0",
+          "@atproto/syntax": "@atproto/syntax@0.3.0",
+          "iso-datestring-validator": "iso-datestring-validator@2.2.2",
+          "multiformats": "multiformats@9.9.0",
+          "zod": "zod@3.23.8"
+        }
+      },
+      "@atproto/syntax@0.3.0": {
+        "integrity": "sha512-Weq0ZBxffGHDXHl9U7BQc2BFJi/e23AL+k+i5+D9hUq/bzT4yjGsrCejkjq0xt82xXDjmhhvQSZ0LqxyZ5woxA==",
+        "dependencies": {}
+      },
+      "@atproto/xrpc@0.6.2": {
+        "integrity": "sha512-as/gb08xJb02HAGNrSQSumCe10WnOAcnM6bR6KMatQyQJuEu7OY6ZDSTM/4HfjjoxsNqdvPmbYuoUab1bKTNlA==",
+        "dependencies": {
+          "@atproto/lexicon": "@atproto/lexicon@0.4.1",
+          "zod": "zod@3.23.8"
+        }
+      },
+      "@upstash/redis@1.34.0": {
+        "integrity": "sha512-TrXNoJLkysIl8SBc4u9bNnyoFYoILpCcFJcLyWCccb/QSUmaVKdvY0m5diZqc3btExsapcMbaw/s/wh9Sf1pJw==",
+        "dependencies": {
+          "crypto-js": "crypto-js@4.2.0"
+        }
+      },
+      "await-lock@2.2.2": {
+        "integrity": "sha512-aDczADvlvTGajTDjcjpJMqRkOF6Qdz3YbPZm/PyW6tKPkx2hlYBzxMhEywM/tU72HrVZjgl5VCdRuMlA7pZ8Gw==",
+        "dependencies": {}
+      },
+      "crypto-js@4.2.0": {
+        "integrity": "sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==",
+        "dependencies": {}
+      },
+      "graphemer@1.4.0": {
+        "integrity": "sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==",
+        "dependencies": {}
+      },
+      "iso-datestring-validator@2.2.2": {
+        "integrity": "sha512-yLEMkBbLZTlVQqOnQ4FiMujR6T4DEcCb1xizmvXS+OxuhwcbtynoosRzdMA69zZCShCNAbi+gJ71FxZBBXx1SA==",
+        "dependencies": {}
+      },
+      "multiformats@9.9.0": {
+        "integrity": "sha512-HoMUjhH9T8DDBNT+6xzkrd9ga/XiBI4xLr58LJACwK6G3HTOPeMz4nB4KJs33L2BelrIJa7P0VuNaVF3hMYfjg==",
+        "dependencies": {}
+      },
+      "tlds@1.254.0": {
+        "integrity": "sha512-YY4ei7K7gPGifqNSrfMaPdqTqiHcwYKUJ7zhLqQOK2ildlGgti5TSwJiXXN1YqG17I2GYZh5cZqv2r5fwBUM+w==",
+        "dependencies": {}
+      },
+      "uint8arrays@3.0.0": {
+        "integrity": "sha512-HRCx0q6O9Bfbp+HHSfQQKD7wU70+lydKVt4EghkdOvlK/NlrF90z+eXV34mUd48rNvVJXwkrMSPpCATkct8fJA==",
+        "dependencies": {
+          "multiformats": "multiformats@9.9.0"
+        }
+      },
+      "zod@3.23.8": {
+        "integrity": "sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==",
+        "dependencies": {}
+      }
+    }
+  },
+  "remote": {},
+  "workspace": {
+    "dependencies": [
+      "jsr:@std/assert@1",
+      "jsr:@supabase/functions-js@^2.4.3",
+      "npm:@atproto/api@^0.13.7",
+      "npm:@upstash/redis@^1.34.0"
+    ]
+  }
+}
