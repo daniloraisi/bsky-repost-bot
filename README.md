@@ -4,11 +4,11 @@ Esse é o repositório do Bot de Repost para o BlueSky da comunidade.dev.br.
 
 ## Funcionalidades
 
-|                       | Dev | Beta | Pronto |
-| --------------------- | --- | ---- | ------ |
-| Repost menção         | [ ] | [x]  | [ ]    |
-| Repost #bolhatech     | [x] | [ ]  | [ ]    |
-| Repost #comunidadedev | [x] | [ ]  | [ ]    |
+|                       | Dev                | Beta               | Pronto |
+| --------------------- | ------------------ | ------------------ | ------ |
+| Repost menção         |                    | :heavy_check_mark: |        |
+| Repost #bolhatech     | :heavy_check_mark: |                    |        |
+| Repost #comunidadedev | :heavy_check_mark: |                    |        |
 
 ## Para usar
 
