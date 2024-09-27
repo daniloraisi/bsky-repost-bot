@@ -46,7 +46,7 @@ async function processTags(tags: AppBskyFeedDefs.PostView[]) {
     const exists = await mentionReposted(tag.cid);
     const liked = tag.viewer?.like;
 
-    if (exists && liked) {
+    if (exists || liked) {
       console.log(`Already reposted: ${tag.cid}`);
       continue;
     }
