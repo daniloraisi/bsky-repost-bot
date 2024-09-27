@@ -1,5 +1,5 @@
 import { Redis } from "npm:@upstash/redis";
-import { AtpSessionData } from "@atproto/api";
+import { AtpSessionData } from "npm:@atproto/api";
 
 const redis = Redis.fromEnv({
   enableAutoPipelining: false,

@@ -75,7 +75,7 @@ Deno.serve(async (_req) => {
   } catch (error) {
     return new Response(JSON.stringify(error), {
       headers: { "Content-Type": "application/json" },
-      status: 500,
+      status: error.status || 500,
     });
   }
 });
