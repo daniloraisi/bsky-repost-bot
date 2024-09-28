@@ -1,24 +1,33 @@
-import { AtpAgent, AtpSessionData } from "npm:@atproto/api";
+import { AtpAgent } from "npm:@atproto/api";
 import { LUCENE, TAGS } from "./config/index.ts";
 import { getPreviousSession, saveSession } from "./redis-client.ts";
 
 const agent = new AtpAgent({
   service: Deno.env.get("ATPROTO_SERVICE_URL")!,
+  persistSession: async (_evt, session) => {
+    await saveSession(session!);
+  },
 });
 
 export async function login() {
-  let response;
-  const previousSession = await getPreviousSession();
-  if (previousSession) {
-    response = await agent.resumeSession(previousSession as AtpSessionData);
-  }
-
-  if (!response?.success) {
-    response = await agent.login({
-      identifier: Deno.env.get("BSKY_IDENTIFIER")!,
-      password: Deno.env.get("BSKY_APP_PASSWORD")!,
-    });
-    await saveSession(response.data as AtpSessionData);
+  try {
+    const previousSession = await getPreviousSession();
+    if (previousSession) {
+      await agent.resumeSession({
+        did: previousSession.did,
+        active: previousSession.active,
+        handle: previousSession.handle,
+        accessJwt: previousSession.accessJwt,
+        refreshJwt: previousSession.refreshJwt,
+      });
+    }
+  } catch (error) {
+    if (error.error === "ExpiredToken") {
+      await agent.login({
+        identifier: Deno.env.get("BSKY_IDENTIFIER")!,
+        password: Deno.env.get("BSKY_APP_PASSWORD")!,
+      });
+    }
   }
 }
 
