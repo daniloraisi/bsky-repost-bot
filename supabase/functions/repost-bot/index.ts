@@ -43,17 +43,14 @@ async function processMensions(
 
 async function processTags(tags: AppBskyFeedDefs.PostView[]) {
   for (const tag of tags) {
-    const exists = await mentionReposted(tag.cid);
     const liked = tag.viewer?.like;
-
-    if (exists || liked) {
+    if (liked) {
       console.log(`Already reposted: ${tag.cid}`);
       continue;
     }
 
     await like(tag.uri, tag.cid);
     await repost(tag.uri, tag.cid);
-    await saveMention(tag.cid);
   }
 }
 
