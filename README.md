@@ -1,6 +1,8 @@
 # BSky Repost Bot
 
-Esse é o repositório do Bot de Repost para o BlueSky da [comunidade.dev.br](comunidade.dev.br).
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/daniloraisi/bsky-repost-bot/deploy-function.yml?branch=main&style=for-the-badge&logo=bluesky&label=comunidade.dev.br)
+
+Esse é o repositório do Bot de Repost para o BlueSky da <a href="https://bsky.app/profile/comunidade.dev.br" rel="noopener noreferrer" target="_blank">comunidade.dev.br</a>.
 
 ## Funcionalidades
 
