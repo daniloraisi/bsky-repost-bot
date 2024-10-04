@@ -1,8 +1,13 @@
 # BSky Repost Bot
 
-![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/daniloraisi/bsky-repost-bot/deploy-function.yml?branch=main&style=for-the-badge&logo=bluesky&label=comunidade.dev.br)
+<div align="center">
 
-Esse é o repositório do Bot de Repost para o BlueSky da <a href="https://bsky.app/profile/comunidade.dev.br" rel="noopener noreferrer" target="_blank">comunidade.dev.br</a>.
+[![Static Badge](https://img.shields.io/badge/Made%20with%20Deno-000000?style=for-the-badge&logo=deno)](https://deno.com/)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/daniloraisi/bsky-repost-bot/deploy-function.yml?branch=main&style=for-the-badge&logo=bluesky&label=comunidade.dev.br)](https://bsky.app/profile/comunidade.dev.br)
+
+</div>
+
+Esse é o repositório do Bot de Repost para o BlueSky.
 
 ## Funcionalidades
 
