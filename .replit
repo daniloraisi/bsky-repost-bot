@@ -1,0 +1,8 @@
+modules = ["deno-1"]
+run = "deno run --env -A ./supabase/functions/repost-bot/index.ts"
+
+[nix]
+channel = "unstable"
+
+[deployment]
+run = ["sh", "-c", "deno run --env -A ./supabase/functions/repost-bot/index.ts"]

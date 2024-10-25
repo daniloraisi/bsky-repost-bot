@@ -4,6 +4,7 @@
 
 [![Static Badge](https://img.shields.io/badge/Made%20with%20Deno-000000?style=for-the-badge&logo=deno)](https://deno.com/)
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/daniloraisi/bsky-repost-bot/deploy-function.yml?branch=main&style=for-the-badge&logo=bluesky&label=comunidade.dev.br)](https://bsky.app/profile/comunidade.dev.br)
+[![Try with Replit Badge](https://replit.com/badge?caption=Try%20with%20Replit)](https://replit.com/github)
 
 </div>
 
